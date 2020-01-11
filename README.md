@@ -6,6 +6,16 @@ by default scrcpy works in RPi but cpu always clocks at >90% and temp around ~70
 with this script get scrcpy working with hardware acceleration on most popular raspberry pi computer. (btw no controls)
 
 ## How to :
+```
+sudo wget https://github.com/zanjie1999/scrcpy-pi-omx/raw/master/startscreen.sh -O /usr/local/bin/scrcpy-omx
+sudo chmod +x /usr/local/bin/scrcpy-omx
+scrcpy-omx
+```
+
+
+or
+
+
 1. compile and install scrcpy https://github.com/Genymobile/scrcpy/blob/master/BUILD.md
 2. download startscreen.sh
 3. run 
