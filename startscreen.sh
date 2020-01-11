@@ -5,7 +5,7 @@ if [ -x /tmp/streamer ]
  then
    nc -l -p 56100 > /tmp/streamer &
 else
-   mkfifo /home/pi/streamer
+   mkfifo /tmp/streamer
    nc -l -p 56100 > /tmp/streamer &
 fi
 omxplayer -o hdmi --no-keys --no-osd --refresh  --advanced=0 --loop --timeout 0 --lavfdopts probesize:250000 --video_queue 1 --avdict rtsp_transport:tcp  /home/pi/streamer &
